@@ -1,4 +1,4 @@
-class Monster {
+public class Monster extends Character {
     /*
     fields
         life/health/HP as an int
@@ -22,10 +22,6 @@ class Monster {
             calculates damage using this formula: calculates damage using this formula: damage = (strength * attack rating) - warrior defense
             damage should be an integer value
     */
-    private int health;
-    private int strength;
-    private int defense;
-    private double attack;
 
     private int randInt(int a, int b) {
         return (int) (Math.random() * (b - a) + a);
@@ -36,21 +32,11 @@ class Monster {
         strength = randInt(20, 65);
         defense = 20;
         attack = 1;
+        // System.out.println("Health: " + health);
+        // System.out.println("Strength: " + strength);
+        // System.out.println("Defense: " + defense);
+        // System.out.println("Attack: " + attack);
+
     }
 
-    public boolean isAlive() {
-        return health > 0;
-    }
-
-    public int getDefense() {
-        return defense;
-    }
-
-    public void lowerHP(int amount) {
-        health -= amount;
-    }
-
-    public void attack(Protagonist p) {
-        double damage = strength * attack - p.getDefense();
-    }
 }

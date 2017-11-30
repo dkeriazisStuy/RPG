@@ -1,4 +1,4 @@
-class Protagonist {
+public class Protagonist extends Character {
     /*
     fields
         name
@@ -28,36 +28,21 @@ class Protagonist {
             resets attack attribute
     */
     private String name;
-    private int health;
-    private int strength;
-    private int defense;
-    private double attack;
 
     public Protagonist(String name) {
         this.name = name;
         health = 100;
         strength = 10;
         normalize();
-    }
-
-    public boolean isAlive() {
-        return health > 0;
-    }
-
-    public int getDefense() {
-        return defense;
+        // System.out.println("Name: " + name);
+        // System.out.println("Health: " + health);
+        // System.out.println("Strength: " + strength);
+        // System.out.println("Defense: " + defense);
+        // System.out.println("Attack: " + attack);
     }
 
     public String getName() {
         return name;
-    }
-
-    public void lowerHP(int amount) {
-        health -= amount;
-    }
-
-    public void attack(Monster m) {
-        double damage = strength * attack - m.getDefense();
     }
 
     public void specialize() {

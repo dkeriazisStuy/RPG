@@ -1,0 +1,6 @@
+# This file tells github which files to ignore when
+# performing a 'git add'
+# (Files matched are ignored)
+
+# Matches .class files
+*.class
