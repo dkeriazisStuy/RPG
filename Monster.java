@@ -10,4 +10,13 @@ public class Monster extends Character{
     ostrength = strength;
     odefense = defense;
   }
+  public String toString(){
+	String result = "";
+	result += "HP: " + HP + System.lineSeparator() +
+		  "Strength: " + strength + System.lineSeparator() +
+		  "Defense: " + defense + System.lineSeparator() +
+		  "Attack Rating: " + attackrating + System.lineSeparator();
+        return result;
+
+  }
 }
