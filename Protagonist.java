@@ -23,7 +23,10 @@ public class Protagonist extends Character{
       return "OwO";
     }
     public String toString(){
-      String Stats = "Name: " + name + "HP: " + HP + "strength: " + strength +"defense: " + defense;
+      String Stats = "HP: " + HP + System.lineSeparator() +
+    		  "Strength: " + strength + System.lineSeparator() +
+    		  "Defense: " + defense + System.lineSeparator() +
+    		  "Attack Rating: " + attackrating + System.lineSeparator();
       return Stats;
     }
 }
