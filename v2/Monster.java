@@ -39,7 +39,7 @@ public class Monster extends Character {
         String result = "Health: " + health + System.lineSeparator();
         result += "Strength: " + strength + System.lineSeparator();
         result += "Defense: " + defense + System.lineSeparator();
-        result += "Attack: " + attack + System.lineSeparator();
+        result += "Attack: " + attack;
         return result;
     }
 
