@@ -8,6 +8,18 @@ public class Wizard extends Protagonist {
         normalize();
     }
 
+    public void specialize() {
+        if (defense >= 0) {
+            defense -= 1;
+            attack += 1;
+        }
+    }
+
+    public void normalize() {
+        defense = start_defense;
+        attack = start_attack;
+    }
+
     // Error if method not present:
     // Wizard is not abstract and does not override abstract method toString() in Protagonist
     public String toString() {

@@ -48,15 +48,7 @@ public abstract class Protagonist extends Character {
         return name;
     }
 
-    public void specialize() {
-        if (defense >= 0) {
-            defense -= 1;
-            attack += 1;
-        }
-    }
+    public abstract void specialize();
 
-    public void normalize() {
-        defense = start_defense;
-        attack = start_attack;
-    }
+    public abstract void normalize();
 }

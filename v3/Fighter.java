@@ -8,6 +8,18 @@ public class Fighter extends Protagonist {
         normalize();
     }
 
+    public void specialize() {
+        if (defense >= 0) {
+            defense -= 1;
+            attack += 1;
+        }
+    }
+
+    public void normalize() {
+        defense = start_defense;
+        attack = start_attack;
+    }
+
     public String toString() {
         String result = "Name: " + name + System.lineSeparator();
         result += "Health: " + health + System.lineSeparator();
